@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Health Prediction</title>
+    <style>
+        body {
+            background-image: url('/static/images/bg.jpg'); /* Replace 'path/to/your/bg.jpg' with the actual path to your background image file */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif; /* Specify a fallback font family */
+            margin: 0; /* Remove default margin to cover the entire viewport */
+            padding: 0; /* Remove default padding */
+            
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(233, 241, 243, 0.8);
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Stroke Prediction</h1>
+        <form id="healthForm" action="/predict" method="post">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter age" required max="120"/>
+
+            <label for="education">Education Level:</label>
+            <select id="education" name="education">
+                <option value="1">Foundational Education</option>
+                <option value="2">Intermediate Education</option>
+                <option value="3">Advanced Education</option>
+                <option value="4">Specialized Education</option>
+            </select>
+
+            <label for="currentSmoker">Smoker?</label>
+            <select id="currentSmoker" name="currentSmoker">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+
+            <label for="cigsPerDay">Cigarettes Per Day:</label>
+            <input type="number" id="cigsPerDay" name="cigsPerDay" placeholder="Enter cigarettes per day" required max="100"/>
+
+            <label for="BPMeds">Currently Under Medication for BP?</label>
+            <select id="BPMeds" name="BPMeds">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+
+            <label for="prevalentStroke">History of Heart Stroke?</label>
+            <select id="prevalentStroke" name="prevalentStroke">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+
+            <label for="prevalentHyp">History of Hypertension?</label>
+            <select id="prevalentHyp" name="prevalentHyp">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+
+            <label for="diabetes">History of Diabetes?</label>
+            <select id="diabetes" name="diabetes">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+
+            <label for="totChol">Cholesterol Level:</label>
+            <input type="number" id="totChol" name="totChol" placeholder="Enter cholesterol level" required max="250"/>
+
+            <label for="sysBP">Systolic Blood Pressure:</label>
+            <input type="number" id="sysBP" name="sysBP" placeholder="Enter systolic blood pressure" required max="300"/>
+
+            <label for="diaBP">Diastolic Blood Pressure:</label>
+            <input type="number" id="diaBP" name="diaBP" placeholder="Enter diastolic blood pressure" required max="200"/>
+
+            <label for="BMI">Body Mass Index:</label>
+            <input type="number" id="BMI" name="BMI" placeholder="Enter BMI" required max="100"/>
+
+            <label for="heartRate">Heart Rate:</label>
+            <input type="number" id="heartRate" name="heartRate" placeholder="Enter heart rate" required max="250"/>
+
+            <label for="glucose">Glucose Level:</label>
+            <input type="number" id="glucose" name="glucose" placeholder="Enter glucose level" required max="300"/>
+
+            <label for="BMIcat">BMI Category:</label>
+            <select id="BMIcat" name="BMIcat">
+                <option value="underweight">Underweight</option>
+                <option value="normal">Normal</option>
+                <option value="overweight">Overweight</option>
+                <option value="obesity">Obesity</option>
+                <option value="severeObesity">Severe Obesity</option>
+            </select>
+
+            <label for="glucCat">Glucose Category:</label>
+            <select id="glucCat" name="glucCat">
+                <option value="below60">Below 60</option>
+                <option value="60-90">60-90</option>
+                <option value="90-120">90-120</option>
+                <option value="120-180">120-180</option>
+                <option value="180-273">180-273</option>
+                <option value="beyond273">Beyond 273</option>
+            </select>
+
+            <label for="ageCat">Age Category:</label>
+            <select id="ageCat" name="ageCat">
+                <option value="under20">Under 20</option>
+                <option value="20-40">20-40</option>
+                <option value="40-60">40-60</option>
+                <option value="60-80">60-80</option>
+                <option value="above80">Above 80</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="predictionResult"></div>
+    </div>
+</body>
+</html>

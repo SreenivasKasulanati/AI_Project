@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Stroke Prediction Result</title>
+    <!-- Add any additional styling or CSS links here -->
+    <style>
+        body {
+            background-image: url('/static/images/bg1.jpg');
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #f3f1f1;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #f7f3f3;
+            border-radius: 5px;
+            background-color: #f9fafa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heart Stroke Prediction Result</h1>
+    <div class="result">
+        <p><strong>The chance of having a heart stroke in the next 10 years is:</strong></p>
+        <p id="predictionResult">Loading...</p>
+    </div>
+
+    <!-- Add any additional scripts or JavaScript here -->
+    <script>
+        // Get the prediction result from the JSON response
+        var predictionResult = "{{ prediction_result }}";
+
+        // Update the content of the result paragraph
+        document.getElementById("predictionResult").textContent = predictionResult;
+    </script>
+</body>
+</html>
