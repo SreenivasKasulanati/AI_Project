@@ -1,99 +1,56 @@
-<a name="br1"></a> 
-
 **Overview**
-•
 
-The Heart Stroke Predicꢀon System is an arꢀﬁcial intelligence and machine learning-based
-
-project designed to predict the likelihood of a person experiencing a heart stroke. This system
-
-utilizes advanced algorithms to analyse relevant medical data and provide a predicꢀve model
-
-for assessing the risk of a heart stroke.
-
+- The Heart Stroke Prediction System is an artificial intelligence and machine learning-based project designed to predict the likelihood of a person experiencing a heart stroke. This system utilizes advanced algorithms to analyse relevant medical data and provide a predictive model for assessing the risk of a heart stroke.
 
 **Features**
-•
 
+- Predicts the likelihood of a heart stroke based on input data.
 
-Predicts the likelihood of a heart stroke based on input data.
+- Utilized AI components such as BFS (Breadth First Search) as part of data preprocessing for missing value imputation.
 
-Utilized AI components such as BFS (Breadth First Search) as part of data preprocessing for
+- Uses machine learning and artificial intelligence algorithms
 
-missing value imputation.
+1. Logistic regression
+2. Decision tree
+3. Random Forest
+4. XG-Boost classifier
+5. Hybrid-voting classifier
 
-Uses machine learning and artiﬁcial intelligence algorithms
-
-1\. Logistic regression
-
-2\. Decision tree
-
-3\. Random Forest
-
-4\. XG-Boost classiﬁer
-
-5\. Hybrid-voꢀng classiﬁer
-
-
-Provides a user-friendly interface for inpuꢁng medical data.
-
-Oﬀers quick and accurate predicꢀons for early intervention.
-
+- Provides a user-friendly interface for inputting medical data.
+- Offers quick and accurate predictions for early intervention.
 
 **Installation**
-•
 
+- Clone the repository:
 
-Clone the repository:
+1. git clone= https://github.com/SreenivasKasulanati/AI\_Project
 
-1\. git clone= https://github.com/SreenivasKasulanati/AI\_Project
+  - Install the required dependencies:
 
-Install the required dependencies:
-
-2\. pip install -r requirements.txt
-
+1. pip install -r requirements.txt
 
 **Usage**
-•
 
+- Navigate to the project directory:
 
+1. cd heart-stroke-prediction
 
-Navigate to the project directory:
+- Run the application:
 
-1\. cd heart-stroke-prediction
+1. python app.py
 
-Run the applicꢀtion:
-
-2\. python app.py
-
-Access the applicaꢀon in your web browser at http://localhost:5000.
-
-Input the required medical data in the provided form.
-
-Click the "Predict" buꢂon to get the heart stroke prediction.
-
+- Access the application in your web browser at http://localhost:5000.
+- Input the required medical data in the provided form.
+- Click the "Predict" button to get the heart stroke prediction.
 
 **Dependencies**
-•
 
-
-Python 3.7+
-
-Flask
-
-Scikit-learn
-
-Pandas
-
-NumPy
+- Python 3.7+
+- Flask
+- Scikit-learn
+- Pandas
+- NumPy
 
 **Data**
-•
 
-
-<a name="br2"></a> 
-The system uses a dataset containing relevant medical informaꢀon for training and tesꢀng the
-
-predicꢀve model. The dataset is included in the data directory.
-
-
+- The system uses a dataset containing relevant medical information for training and testing the predictive model. The dataset is included in the data directory.
