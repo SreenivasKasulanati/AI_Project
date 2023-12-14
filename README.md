@@ -16,11 +16,13 @@ Offers quick and accurate predictions for early intervention.
 Installation:
 Clone the repository:
 1.git clone= https://github.com/SreenivasKasulanati/AI_Project
-Install the required dependencies:
+Install the required dependencies:
 2.pip install -r requirements.txt
-Usage
+
+Usage:
 Navigate to the project directory:
 1.cd heart-stroke-prediction
+
 Run the application:
 2.python app.py
 Access the application in your web browser at http://localhost:5000.
