@@ -2,6 +2,7 @@
 
 **Overview**
 
+
 The Heart Stroke Predicꢀon System is an arꢀﬁcial intelligence and machine learning-based
 
 project designed to predict the likelihood of a person experiencing a heart stroke. This system
@@ -12,6 +13,7 @@ for assessing the risk of a heart stroke.
 
 
 **Features**
+
 
 
 Predicts the likelihood of a heart stroke based on input data.
@@ -35,10 +37,12 @@ Uses machine learning and artiﬁcial intelligence algorithms
 
 Provides a user-friendly interface for inpuꢁng medical data.
 
-Oﬀers quick and accurate predicꢀons for early intervenꢀon.
+Oﬀers quick and accurate predicꢀons for early intervention.
 
 
 **Installation**
+
+
 
 Clone the repository:
 
@@ -52,11 +56,13 @@ Install the required dependencies:
 **Usage**
 
 
+
+
 Navigate to the project directory:
 
-1\. cd heart-stroke-predicꢀon
+1\. cd heart-stroke-prediction
 
-Run the applicaꢀon:
+Run the applicꢀtion:
 
 2\. python app.py
 
@@ -69,6 +75,8 @@ Click the "Predict" buꢂon to get the heart stroke prediction.
 
 **Dependencies**
 
+
+
 Python 3.7+
 
 Flask
@@ -80,6 +88,8 @@ Pandas
 NumPy
 
 **Data**
+
+
 
 <a name="br2"></a> 
 The system uses a dataset containing relevant medical informaꢀon for training and tesꢀng the
